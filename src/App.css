@@ -1,0 +1,113 @@
+html,
+body {
+  background-image: url("./genetics-blue-small.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.stroke {
+  fill: none;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  transform: rotate(0.5turn) scale(0.1) scale(-1,1);
+}
+
+.pink {
+  stroke: #F62459;
+}
+
+.white {
+  stroke: white;
+}
+
+svg {
+  transform: translateX(-56px);
+}
+
+.svg-wrapper {
+  height: 50px;
+  animation: nameAnimation 1s 5s forwards;
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes nameAnimation {
+  to { opacity: 0; }
+  to { visibility: 0; }
+}
+
+.big-btn {
+  /* color: lightskyblue; */
+  color: white;
+  background-color: transparent;
+  padding: 20px;
+  border: 2px solid white;
+  font-size: 24px;
+  width: 250px;
+}
+
+.fadeInAfterJS {
+  visibility: hidden;
+  opacity: 0;
+  animation: fadeInAfterJS 1s 6s forwards;
+}
+
+.fadeIn {
+  visibility: hidden;
+  opacity: 0;
+  animation: fadeInAnimation 2s 0s forwards;
+}
+
+@keyframes fadeInAfterJS {
+  to { visibility: visible; }
+  to { opacity: 1;}
+}
+
+@keyframes fadeInAnimation {
+  to { visibility: visible; }
+  to { opacity: 1;}
+}
+
+.about {
+  border-top: 1px solid white;
+  margin: 30px;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scroller {
+  padding: 50px;
+  text-align: center;
+}
+
+.aboutDetailOne,
+.aboutDetailTwo {
+  padding: 5px;
+}
+
+.aboutDetail {
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bottom-pic {
+  background-image: url("./code.jpg");
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 150px;
+}
+
+.unfilled-gap {
+  height: 500px;
+}
+
