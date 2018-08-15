@@ -38,7 +38,6 @@ class Container extends Component {
 
     setDivHeights = (divHeights) => {
         Object.keys(divHeights).forEach(key => {
-            console.log(divHeights[key])
             this.setState(state => (state.divHeights[key] = divHeights[key], state));
         });
     };
@@ -52,7 +51,6 @@ class Container extends Component {
     };
     
     render() {
-        console.log(this.state.divHeights)
         const buffer = this.state.windowHeight * 0.8;
         const scrollPos = this.state.scrollPosition;
         const divHeights = this.state.divHeights;
